@@ -1,0 +1,73 @@
+.wrapper {
+  //   background-image: url("../assets/bg-water.jpg");
+  //   background-repeat: no-repeat;
+  //   background-size: 100% 50%;
+  height: 100vh;
+}
+
+.content-wrapper {
+  background-image: url("../assets/bg-water.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60%;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.right-side {    
+  width: 50%;
+  align-self: center;
+  color: white;
+}
+.right-side h1 {
+  font-size: 50px;
+}
+
+.jbl-center {
+  position: absolute;  
+  width: 50vw;
+  height: auto;
+  margin-top: 5%;  
+  z-index: 99;
+}
+
+.under-text {
+  display: flex;
+  align-items: center;
+}
+.under-text p {
+  margin-right: 30px;
+}
+.under-text span {
+  font-weight: 500;
+}
+
+/*-- MEDIA QUERY --*/
+
+@media screen and (max-width: 540px) {
+  .content-wrapper {
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: flex-start;
+    height: 50vh;
+  }
+
+  .jbl-center {
+    width: 90vw;
+    margin-top: 70%;
+  }
+  .right-side {
+    width: 100%;
+  }
+  .right-side h1 {
+    font-size: 30px;
+  }
+
+  .under-text {
+    flex-direction: column;
+  }
+}
