@@ -5,16 +5,24 @@
   height: 100vh;
 }
 
-.content-wrapper {
+.upper-content-wrapper {
   background-image: url("../assets/bg-water.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 60%;
   display: flex !important;
-  align-items: center;
-  justify-content: space-evenly;
+  align-items: flex-end;
+  justify-content: flex-end;
   padding-left: 10%;
   padding-right: 10%;
+}
+
+.lower-content-wrapper {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40%;
 }
 
 .right-side {    
@@ -45,6 +53,87 @@
   font-weight: 500;
 }
 
+.card-wrapper {
+  display: flex;
+  justify-content: space-evenly;  
+}
+
+.card {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;  
+}
+
+.description-text {  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rounded-number {
+  margin: 20px;
+  width: 30px;
+  height: 30px;
+  padding: 12px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: lightblue;
+  color: lightblue;
+  font-size: 30px;    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot-separator {
+  margin-top: 20px;
+  color: lightblue;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* -- heart -- */
+#heart {   
+  position: relative; 
+  width: 60px; 
+  height: 70px; 
+  margin-top: 15px;
+  margin-bottom: 13px;  
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+} 
+
+#heart:before, #heart:after { 
+  position: absolute; 
+  content: ""; 
+  left: 30px;   
+  top: 10; 
+  width: 40px; 
+  height: 65px; 
+  background: coral; 
+  border-radius: 50px 50px 0 0; 
+  transform: rotate(-45deg); 
+  transform-origin: 0 100%;   
+  z-index: -1;  
+} 
+
+#heart:after { 
+  left: -10px; 
+  transform: rotate(45deg); 
+  transform-origin :100% 100%; 
+  
+}
+
+.card-text {
+  font-weight: bold;
+}
+
 /*-- MEDIA QUERY --*/
 
 @media screen and (max-width: 540px) {
@@ -57,11 +146,11 @@
   }
 
   .jbl-center {
-    width: 90vw;
-    margin-top: 70%;
+    width: 90vw;    
   }
   .right-side {
     width: 100%;
+    padding-bottom: 30px;
   }
   .right-side h1 {
     font-size: 30px;
@@ -69,5 +158,22 @@
 
   .under-text {
     flex-direction: column;
+  }
+  .under-text p {
+    margin-right: 0;
+  }
+  
+  .upper-content-wrapper {
+    flex-direction: column;
+    // justify-content: flex-start;
+  }
+  .lower-content-wrapper {
+    height: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+  }
+  .card-wrapper {
+    flex-direction: column;           
   }
 }
