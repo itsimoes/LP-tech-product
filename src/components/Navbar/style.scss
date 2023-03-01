@@ -1,0 +1,23 @@
+.navbar-wrapper {
+    padding-left: 10%;
+}
+.appbar {
+    position: fixed;
+    z-index: 99;
+    top: 0;    
+}
+
+.link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: coral;
+    font-size: 0.8em;
+}
+.logo {
+    width: 80px;
+}
+@media screen and (max-width: 540px) {
+    .navbar-wrapper {
+        padding-left: 0;
+    }
+}
