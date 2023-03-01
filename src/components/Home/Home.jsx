@@ -28,26 +28,26 @@ const Home = () => {
       </div>
       <div className="lower-content-wrapper">    
         <div className="description-text">
-          <h2>Jbl é a melhor e mais legal caixa de som</h2>
+          <h2>Tenha a melhor e mais potente estação de mídia.</h2>
           <div className="card-wrapper">
             <div className="card">
               <div className="rounded-number">1</div>
-              <div className="card-text">texto do card</div>
+              <div className="card-text">Potência</div>
             </div>
             <div className="dot-separator">..........</div>
             <div className="card">
               <div className="rounded-number">2</div>
-              <div className="card-text">texto do card</div>
+              <div className="card-text">Durabilidade</div>
             </div>
             <div className="dot-separator">..........</div>
             <div className="card">
               <div className="rounded-number">3</div>
-              <div className="card-text">texto do card</div>
+              <div className="card-text">Qualidade</div>
             </div>
             <div className="dot-separator">..........</div>
-            <div className="card">
+            <div id="card4" className="card">
               <div id="heart" className="">4</div>
-              <div className="card-text">texto do card</div>
+              <div className="card-text">Felicidade</div>
             </div>
           </div>
         </div>
