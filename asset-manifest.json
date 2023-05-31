@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/LP-tech-product/static/css/main.ddc85851.css",
+    "main.js": "/LP-tech-product/static/js/main.ccf8bae3.js",
+    "static/js/787.f27f7a1c.chunk.js": "/LP-tech-product/static/js/787.f27f7a1c.chunk.js",
+    "static/media/bg-water.jpg": "/LP-tech-product/static/media/bg-water.d972f0b2b416969cf647.jpg",
+    "static/media/jbl.png": "/LP-tech-product/static/media/jbl.4c84a61a9107757d2eca.png",
+    "index.html": "/LP-tech-product/index.html",
+    "main.ddc85851.css.map": "/LP-tech-product/static/css/main.ddc85851.css.map",
+    "main.ccf8bae3.js.map": "/LP-tech-product/static/js/main.ccf8bae3.js.map",
+    "787.f27f7a1c.chunk.js.map": "/LP-tech-product/static/js/787.f27f7a1c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ddc85851.css",
+    "static/js/main.ccf8bae3.js"
+  ]
+}
